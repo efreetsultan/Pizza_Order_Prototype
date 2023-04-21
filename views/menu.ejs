@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our pizzas</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="/script.js" defer></script>
+</head>
+
+<body>
+  <div class="menu-navigation">
+    <ul class="menu-navbar">
+      <img class="navbar-logo" src="https://img.icons8.com/office/344/pizza.png" alt="Pizza logo">
+      <li class="navbar-buttons"><a href="/">Home</a></li>
+      <li class="navbar-buttons"><a href="/pizza/list">Menu</a></li>
+      <li class="navbar-buttons"><a href="/myorder">My order</a></li>
+    </ul>
+  </div>
+  <div id="menu-container">
+    <% pizzasList.pizzas.forEach(function(pizza) { %>
+      <div id="pizzaDiv<%= pizza.id%>" class="menu-item-container">
+        <img class="menu-item-img" src="/<%=pizza.name%>.png">
+        <form class="menu-item-form" action="http://127.0.0.1:9001/myorder" method="post">
+          <h1>
+            <%= pizza.name %>
+          </h1>
+          <h2>
+            <%= pizza.ingredients %>
+          </h2>
+          <h3 class="menu-allergens">Allergens: <%= pizza.allergens %>
+          </h3>
+          <h4>Price: <%= pizza.price %> Mmc
+          </h4>
+          <div class="input-container">
+            <input name="pizza" value="<%= pizza.name%>" type="hidden">
+            <input name="price" value="<%= pizza.price%>" type="hidden">
+            <input class="input-field" name="number" type="number" value="1" min="1">
+            <button type="submit" class="add-to-cart">Add to cart</button>
+          </div>
+        </form>
+      </div>
+      <% }); %>
+  </div>
+  <form id="pizza-filter" action="http://127.0.0.1:9001/filteredPizza" method="get">
+
+  </form>
+  <div id="menu-allergen-container">
+    <button id="menu-show-allergens">Mamma Mia! You have allergies? Click here to filter our menu by allergens!</button>
+    <button id="hide-checkboxes-button">Mamma mia! I don't have any allergies! Click here to hide the allergen
+      filter!</button>
+    <div id="menu-allergen-container-checkboxes"><input type="checkbox" id="gluten" class="checkbox-class"><label
+        for="gluten">gluten</label><input type="checkbox" id="crustaceans" class="checkbox-class"><label
+        for="crustaceans">crustaceans</label><input type="checkbox" id="eggs" class="checkbox-class"><label
+        for="eggs">eggs</label><input type="checkbox" id="fish" class="checkbox-class"><label
+        for="fish">fish</label><input type="checkbox" id="deez nuts" class="checkbox-class"><label for="deez nuts">deez
+        nuts</label><input type="checkbox" id="soy" class="checkbox-class"><label for="soy">soy</label><input
+        type="checkbox" id="lactose" class="checkbox-class"><label for="lactose">lactose</label>
+    </div>
+  </div>
+  <div class="menu-bgrnd">
+    <img id="menu-bgrnd-img" src="/menu_bgrnd.jpg">
+  </div>
+
+</body>
+
+
+</html>

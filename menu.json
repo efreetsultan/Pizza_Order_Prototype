@@ -1,0 +1,165 @@
+{
+    "pizzas": [
+        {
+            "id": 1,
+            "name": "Marinara",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " mozzarella"
+
+            ],
+            "price": 3200,
+            "allergens": [
+                "eggs"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Hawaii",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " ham",
+                " pineapple",
+                " basil",
+                " mozzarella"
+
+            ],
+            "price": 3500,
+            "allergens": [
+                "lactose",
+                "eggs"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Pepperoni",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " pepperoni",
+                " basil",
+                " mozzarella"
+
+            ],
+            "price": 3400,
+            "allergens": [
+                "lactose",
+                "eggs"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bolognese",
+            "ingredients": [
+                "Homemade bolognese meat-sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " carrots",
+                " basil",
+                " pepper",
+                " mozzarella"
+
+            ],
+            "price": 3450,
+            "allergens": [
+                "lactose"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "San Pedro",
+            "ingredients": [
+                "Homemade mexican pizza sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " ground beef",
+                " bell peppers",
+                " pinto/black beans",
+                " mozzarella"
+            ],
+            "price": 3550,
+            "allergens": [
+                "gluten"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Golden truffles",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " white truffle from Tuscany",
+                " pule cheese",
+                " edible gold on top ",
+                " black caviar"
+            ],
+            "price": 25000,
+            "allergens": [
+                "gluten"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Quattro formaggi",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                " garlic",
+                " oregano",
+                " olive oil",
+                " grana padano",
+                " mozzarella",
+                " parmiggiano",
+                " bufala mozzarella"
+
+            ],
+            "price": 3400,
+            "allergens": [
+                "gluten"
+            ]
+        }
+    ],
+"allergens": [
+    {
+        "id": 1,
+        "name": "gluten"
+    },
+    {
+        "id": 2,
+        "name": "crustaceans"
+    },
+    {
+        "id": 3,
+        "name": "eggs"
+    },
+    {
+        "id": 4,
+        "name": "fish"
+    },
+    {
+        "id": 5,
+        "name": "deez nuts"
+    },
+    {
+        "id": 6,
+        "name": "soy"
+    },
+    {
+        "id": 9,
+        "name": "lactose"
+    }
+
+]
+
+}

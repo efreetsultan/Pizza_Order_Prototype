@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="/script.js" defer></script>
+    <title>My order</title>
+</head>
+
+<body>
+    <div class="order-navigation">
+        <ul class="order-navbar">
+            <img class="navbar-logo" src="https://img.icons8.com/office/344/pizza.png" alt="Pizza logo">
+            <li class="navbar-buttons"><a href="/">Home</a></li>
+            <li class="navbar-buttons"><a href="/pizza/list">Menu</a></li>
+            <li class="navbar-buttons"><a href="/myorder">My order</a></li>
+        </ul>
+    </div>
+    <div class="order-container">
+        <% orderList.forEach(function(order){ %>
+            <img class="order-item-img" src="/<%=order.pizza%>.png">
+            <h1 class="order-header">
+                <%=order.pizza%>
+            </h1>
+            <h2 class="order-text">
+                <div id="ordersdiv">
+                    <%=order.number%>
+                </div>
+                <div id='orderpricediv'>
+                    <%=order.price%> MMC
+                </div>
+            </h2>
+            <div id="sum-of-pizzas">
+            </div>
+            <% }) %>
+                <h2 class="order-header">
+                    Total price: <%= sum %> Mmc (Mamma Mia Coin)
+                </h2>
+    </div>
+    <div id="checkoutprice">
+    </div>
+    <form id="checkout" action="http://127.0.0.1:9001/checkout" method="post">
+        <button class="checkout-button" type="submit" form="checkout">Check out</button>
+    </form>
+</body>
+
+</html>

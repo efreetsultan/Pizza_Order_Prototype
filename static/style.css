@@ -1,0 +1,356 @@
+/* RESET DEFAULT CSS SETTINGS */
+
+.element {
+  all: revert;
+}
+
+/* GENERAL SETTINGS */
+
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  position: relative;
+}
+
+.navbar-buttons {
+  width: 100px;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.navbar-buttons>a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.navbar-buttons:hover {
+  color: white;
+  background-color: tomato;
+}
+
+.navbar-logo {
+  align-self: center;
+  max-height: 42px;
+  padding-left: 8px;
+}
+
+h4 {
+  text-transform: capitalize;
+}
+
+h1,
+h4 {
+  font-style: initial;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 8px 0px;
+  text-align: justify;
+}
+
+/* INDEX PAGE CSS */
+
+.index-navigation {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.index-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.index-bgrnd {
+  height: 100%;
+}
+
+#index-bgrnd-img {
+  display: block;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.index-textbox-container {
+  color: crimson;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  top: 25%;
+}
+
+.index-textbox {
+  width: 70%;
+}
+
+.index-textbox-header {
+  font-size: 80px;
+  text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
+}
+
+.index-textbox-paragraph {
+  padding-top: 5%;
+  justify-content: center;
+  text-align: justify;
+  font-size: 30px;
+  width: 70%;
+  margin: auto;
+  text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5)
+}
+
+/* MENU PAGE CSS */
+
+.menu-navigation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.menu-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu-container {
+  color: antiquewhite;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 20px;
+  top: 90px;
+}
+
+.menu-item-container {
+  display: inline-flex;
+  padding-bottom: 30px;
+  height: 220px;
+  padding-right: 30px;
+}
+
+.menu-item-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+  object-fit: fill;
+}
+
+.menu-item-img:hover {
+  animation: spin 6s linear infinite;
+}
+.menu-item-img {
+  -webkit-animation: in 3s;
+}
+
+.menu-item-img:hover {
+  -webkit-animation: out 1.5s;
+}
+
+@-webkit-keyframes in {
+  from   { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes out {
+  0%   { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+.menu-item-form {
+  width: 300px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.menu-bgrnd {
+  height: 100%;
+  top: 0px;
+}
+
+#menu-bgrnd-img {
+  display: block;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.input-container {
+  display: flex;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  height: 28px;
+}
+
+.add-to-cart {
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 0.9);
+  border: 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(15, 176, 10);
+}
+
+.add-to-cart:active {
+  width: 92px;
+}
+
+.input-field {
+  font-family: 'Josefin Sans', sans-serif;
+  color: crimson;
+  padding: 0px;
+  margin: 0px;
+  width: 34px;
+  border-radius: 20px 0px 0px 20px;
+  border: 0px;
+  text-align: right;
+  text-align-last: right;
+}
+
+#menu-allergen-container {
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 1.0);
+  border: 0px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+#menu-allergen-container-checkboxes {
+  text-transform: capitalize;
+  display: none;
+  position: relative;
+}
+
+#menu-show-allergens {
+  font-size: 14px;
+  height: 30px;
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 1.0);
+  border: 0px;
+  display: block;
+}
+
+#menu-show-allergens:hover {
+  background-color: rgb(15, 176, 10);
+}
+
+#hide-checkboxes-button {
+  display: none;
+  font-size: 14px;
+  height: 30px;
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 1.0);
+  border: 0px;
+}
+
+#hide-checkboxes-button:hover {
+  background-color: rgb(15, 176, 10);
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 3px;
+}
+
+/* ORDER PAGE */
+
+.order-navigation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: crimson;
+}
+
+.order-navbar {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.order-item-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.order-container{
+  background-color: wheat;
+  height: 100%;
+}
+.order-header{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.order-text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.checkout-button {
+  position: absolute;
+  color: antiquewhite;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  width: 200px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(5, 146, 0, 0.9);
+  border: 0px;
+  border-radius: 20px;
+}
